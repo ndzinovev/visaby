@@ -1,0 +1,102 @@
+
+<html class="no-js">
+  
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+     
+      
+      <title>Спасибо</title>
+   
+    
+      
+   </head>
+   <body>
+   <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(72245116, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/72245116" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    
+      <canvas id="pixie" width="1366" height="242"></canvas>
+      <div class="container">
+         <div class="layout">
+            <div class="header">
+               <div class="limit">
+                  <h1 class="uppercase">Благодарим Вас за заказ!<br><br>
+                     <span class="yellow">Ваш заказ успешно принят<br> и поставлен в обработку!<br></span>
+                  </h1>
+                  <p style="color: #fff;">В ближайшее время с вами свяжется оператор для подтверждения заказа. Пожалуйста, включите ваш
+                     контактный телефон.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <style>
+         * {          margin: 0;          padding: 0;          border: 0;          outline: 0;          }          html, body {          height: 100%;          width: 100%;          margin: 0px;          padding: 0px;          }          body {          font-size: 14px;          font-family: Exo2Regular, Arial, Helvetica, sans-serif;          color: #000;          width: 100%;          min-width: 100%;          height: 100%;          margin: 0;          padding: 0;          -webkit-font-smoothing: antialiased;          -ms-text-size-adjust: 100%;          -webkit-text-size-adjust: 100%;          }          .header {          -webkit-background-size: cover;          -o-background-size: cover;          -moz-background-size: cover;          background-size: cover;          min-height: 407px;          padding: 2px 0 5px;          }          h1, h2, h3, h4, h5, h6 {          color: #fff;          font-family: Exo2Regular, Arial, Helvetica, sans-serif;          font-weight: normal;          text-rendering: optimizeLegibility;          }          h1 {          font-size: 40px;          }          .header h1 {          margin: 155px auto 15px;          }          .yellow {          color: #ffaf00;          }          .limit {          width: 100%;          margin: 0 auto;          overflow: hidden;          text-align: center;          }          #pixie          {          position:fixed;          background-color: #164979;          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040429', endColorstr='#257EB7',GradientType=0 ); /* IE6-9 */          background: -ms-linear-gradient(top,  #0E2A55 40%,#0E2A55 40%,#1D6196 60%); /* IE10+ */          background: -webkit-gradient(linear, center top, center bottom, from(#040429), to(#257EB7)); /* Chrome, Safari 4+ */          background: -webkit-linear-gradient(center top , #040429, #257EB7) repeat scroll 0 0 rgba(0, 0, 0, 0); /* Chrome 10-25, iOS 5+, Safari 5.1+ */          background:    -moz-linear-gradient(center top , #040429, #257EB7) repeat scroll 0 0 rgba(0, 0, 0, 0); /* Firefox 3.6-15 */          background:      -o-linear-gradient(center top , #040429, #257EB7) repeat scroll 0 0 rgba(0, 0, 0, 0); /* Opera 11.10-12.00 */          background:         linear-gradient(center top , #040429, #257EB7) repeat scroll 0 0 rgba(0, 0, 0, 0); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */          margin:0;          padding:0;          background-size: 100% 100%;          }          .container{          position: relative;          z-index: 11111;          }
+		 
+		 @media screen and (max-width: 468px) {
+ 
+ 
+	
+.header h1 {
+	margin: 65px auto 15px;
+	font-size: 36px;
+}
+
+.yellow {
+	color: #ffaf00;
+	font-size: 24px;
+}
+} 
+
+
+      </style>
+	  
+ <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+	  
+      <script>
+         function draw() { con.clearRect(0, 0, WIDTH, HEIGHT); for (var e = 0; e < pxs.length; e++) { pxs[e].fade(); pxs[e].move(); pxs[e].draw() } } function Circle() { WIDTH = window.innerWidth; HEIGHT = window.innerHeight; this.s = { ttl: 8e3, xmax: 5, ymax: 2, rmax: 10, rt: 1, xdef: 960, ydef: 540, xdrift: 4, ydrift: 4, random: true, blink: true }; this.reset = function () { this.x = this.s.random ? WIDTH * Math.random() : this.s.xdef; this.y = this.s.random ? HEIGHT * Math.random() : this.s.ydef; this.r = (this.s.rmax - 1) * Math.random() + 1; this.dx = Math.random() * this.s.xmax * (Math.random() < .5 ? - 1 : 1); this.dy = Math.random() * this.s.ymax * (Math.random() < .5 ? - 1 : 1); this.hl = this.s.ttl / rint * (this.r / this.s.rmax); this.rt = Math.random() * this.hl; this.s.rt = Math.random() + 1; this.stop = Math.random() * .2 + .4; this.s.xdrift *= Math.random() * (Math.random() < .5 ? - 1 : 1); this.s.ydrift *= Math.random() * (Math.random() < .5 ? - 1 : 1) }; this.fade = function () { this.rt += this.s.rt }; this.draw = function () { if (this.s.blink && (this.rt <= 0 || this.rt >= this.hl)) this.s.rt = this.s.rt * - 1; else if (this.rt >= this.hl) this.reset(); var e = 1 - this.rt / this.hl; con.beginPath(); con.arc(this.x, this.y, this.r, 0, Math.PI * 2, true); con.closePath(); var t = this.r * e; g = con.createRadialGradient(this.x, this.y, 0, this.x, this.y, t <= 0 ? 1 : t); g.addColorStop(0, "rgba(255,255,255," + e + ")"); g.addColorStop(this.stop, "rgba(77,101,181," + e * .6 + ")"); g.addColorStop(1, "rgba(77,101,181,0)"); con.fillStyle = g; con.fill() }; this.move = function () { WIDTH = window.innerWidth; HEIGHT = window.innerHeight; this.x += this.rt / this.hl * this.dx; this.y += this.rt / this.hl * this.dy; if (this.x > WIDTH || this.x < 0) this.dx *= - 1; if (this.y > HEIGHT || this.y < 0) this.dy *= - 1 }; this.getX = function () { return this.x }; this.getY = function () { return this.y } } var WIDTH; var HEIGHT; var canvas; var con; var g; var pxs = new Array; var rint = 60; $(document).ready(function () { WIDTH = "100%"; HEIGHT = "100%"; $("#container").width(WIDTH).height(HEIGHT); WIDTH = window.innerWidth; HEIGHT = window.innerHeight; canvas = document.getElementById("pixie"); $(canvas).attr("width", WIDTH).attr("height", HEIGHT); con = canvas.getContext("2d"); for (var e = 0; e < 100; e++) { pxs[e] = new Circle; pxs[e].reset() } setInterval(draw, rint) }); $(".services .header2 .service-header").hover(function () { var e = $(this); e.find("h3").hide(); $(this).parent().find(".header-bg").stop(true, true).animate({ width: "100%" }, "fast", function () { e.find("h3").addClass("active").fadeIn("fast") }) }, function () { var e = $(this); e.find("h3").hide(); e.parent().find(".header-bg").stop(true, true).animate({ width: 70 }, "fast", function () { e.find("h3").removeClass("active").fadeIn("fast") }) })
+      </script>
+ 
+      
+	  
+	  
+	  
+	  
+   </body>
+</html>
